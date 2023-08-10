@@ -333,7 +333,13 @@ package() {
   if [[ $DOCS_PDF == "YES" ]]; then make DESTDIR="$pkgdir" install-pdf; fi
 }
 
+cleanup_user_caches() {
+  rm -rf $HOME/.cache/emacs/eln-cache/
+  rm -rf $HOME/.emacs.d/eln-cache/
+}
+
 rm -rf $HOME/emacs
 (prepare)
 (build)
 (package)
+(cleanup_user_caches)

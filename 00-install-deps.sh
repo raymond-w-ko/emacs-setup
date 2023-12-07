@@ -98,3 +98,6 @@ apt-get install \
     xterm \
     zstd \
     -y --no-install-recommends
+
+update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-12 10
+update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-12 10

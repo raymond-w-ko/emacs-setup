@@ -33,6 +33,7 @@ apt-get install \
     libgccjit0 \
     libgccjit0 \
     libgif-dev \
+    libgnutls28-dev \
     libgtk-3-0 \
     libgtk-3-dev \
     libharfbuzz-bin \

@@ -307,9 +307,9 @@ _conf+=('--program-transform-name=s/\([ec]tags\)/\1.emacs/')
   #cd ~/src/emacs/build
 
   if [[ $TRAMPOLINES == "YES" ]] && [[ $JIT == "YES" ]] ; then
-    make -j24 trampolines;
+    make -j32 trampolines;
   else
-    make -j24
+    make -j32
   fi
 
   # Optional documentation formats.
